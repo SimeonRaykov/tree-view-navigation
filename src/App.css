@@ -1,0 +1,317 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Remove default bullets */
+ul,
+#myUL {
+  list-style-type: none;
+}
+
+/* Remove margins and padding from the parent ul */
+#myUL {
+  margin: 0;
+  padding: 0;
+}
+
+/* Style the caret/arrow */
+.caret {
+  cursor: pointer;
+  user-select: none; /* Prevent text selection */
+}
+
+/* Create the caret/arrow with a unicode, and style it */
+.caret::before {
+  content: "\25B6";
+  color: black;
+  display: inline-block;
+  margin-right: 6px;
+}
+
+/* Rotate the caret/arrow icon when clicked on (using JavaScript) */
+.caret-down::before {
+  transform: rotate(90deg);
+}
+
+/* Hide the nested list */
+.nested {
+  display: none;
+}
+
+/* Show the nested list when the user clicks on the caret/arrow (with JavaScript) */
+.active {
+  display: block;
+}
+
+.projectsDiv {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  left: 15%;
+}
+
+header {
+  margin-top: 3%;
+  border-bottom: 1px solid #ccc;
+}
+
+header h3 {
+  font-weight: bold;
+  margin-bottom: 3%;
+}
+
+.container-tree-view {
+  border-left: 2px solid #00000029;
+  border-right: 2px solid #00000029;
+}
+
+.companies div {
+  text-align: left;
+  margin-left: 2%;
+  margin-top: 2%;
+  border-bottom: 1px solid #00000029;
+  padding-bottom: 2%;
+  width: 80%;
+}
+
+.company-container a {
+  cursor: pointer;
+  color: #007bff !important;
+}
+
+.company-container a:hover {
+  color: #0062cc !important;
+}
+
+.companies {
+  margin-top: 3%;
+}
+
+.overlay-wrap {
+  top: 0;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: #000000b8;
+  z-index: 1;
+}
+
+.wrap {
+  z-index: -1;
+}
+
+.overlay-container {
+  background-color: white;
+  width: 60%;
+  min-height: 70vh;
+  max-height: 80vh;
+  overflow-y: auto;
+  position: relative;
+  margin: 0 auto;
+  margin-top: 5%;
+  display: block;
+}
+
+.overlay-modal-2 {
+  background-color: white;
+  width: 50%;
+  min-height: 50vh;
+  max-height: 70vh;
+  overflow-y: auto;
+  position: relative;
+  margin: 0 auto;
+  margin-top: 5%;
+  display: block;
+}
+
+.display-none {
+  display: none;
+}
+
+.btn-modal-close {
+  border: 0px solid white;
+  cursor: pointer;
+  text-align: right;
+  position: relative;
+  display: block;
+  float: right;
+  margin-bottom: 5%;
+}
+
+.div-btn-close {
+  display: inline-block;
+  width: 100%;
+}
+
+.btn-modal-close:active,
+.btn-modal-close:hover,
+.btn-modal-close:visited,
+.btn-modal-close:click {
+  border: 0px solid white;
+}
+
+.addresses-container {
+  line-height: 1;
+  font-size: 16px;
+  text-align: left;
+  margin-left: 5%;
+  margin-top: 5%;
+}
+
+.address-title,
+.projects-header,
+.employees-header {
+  font-weight: bold;
+  border-bottom: 1px solid #00000029;
+  padding: 0.3em;
+}
+
+.employees-header {
+  text-align: left;
+  margin-bottom: 5%;
+}
+
+.accordion {
+  text-align: left;
+}
+
+div.area-name {
+  background: white;
+  border: none;
+  border-bottom: 1px solid #00000029;
+  padding: 0;
+}
+
+.card-header {
+  border: none;
+  border-bottom: 1px solid #00000029;
+}
+
+.area-name .btn {
+  cursor: pointer;
+  text-decoration: none !important;
+  padding-left: 0;
+  color: rgba(0, 123, 255, 0.5);
+}
+
+.empty-projects {
+  font-weight: bold;
+  border-bottom: 1px solid #00000029;
+  padding: 0.3em;
+}
+
+.projects-container {
+  line-height: 1;
+  font-size: 16px;
+  text-align: left;
+  margin-left: 5%;
+  margin-top: 5%;
+}
+
+.project-name {
+  background: white !important;
+}
+
+.project-name .btn {
+  text-decoration: none !important;
+}
+
+.btn-remove-employee {
+  float: right;
+}
+
+.btn-add-employee {
+  float: right;
+  padding-top: 5% !important;
+  padding-right: 2% !important;
+}
+
+.card {
+  border: none !important;
+  margin-left: 2%;
+  margin-top: 1%;
+  border-bottom: 1px solid #00000029;
+  padding-bottom: 2%;
+  padding-left: 0;
+  width: 80%;
+  text-align: left;
+}
+
+.card-body {
+  text-align: center;
+}
+
+.companies-header,
+.areas-header {
+  margin-top: 2%;
+  margin-bottom: 1%;
+  padding-bottom: 1%;
+  text-align: left;
+  margin-left: 2%;
+  border-bottom: 1px solid #00000029;
+  width: 80%;
+}
+
+.select-employees {
+  margin-top: 5%;
+  margin-bottom: 15%;
+  width: 100%;
+  display: inline-block;
+}
+
+div.select-employees {
+  float: left;
+  display: block;
+  width: 75%;
+}
+
+.employee-container {
+  display: inline-block;
+  width: 100%;
+  text-align: left;
+  margin-bottom: 5%;
+}
+
+.update-project-name {
+  float: right;
+}
+
+.project-name-input {
+  float: left;
+  padding-left: 20px;
+}
